@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Square of number</title>
+        </head>
+        <body>
+            <h3>Enter a number</h3>
+
+        <form onsubmit="findSquare(); return false;">
+            <input type="number" id="num" required>
+            <button type="submit">Find Square</button>
+            </form>
+
+            <p id="result"></p>
+
+            <script>
+                function findSquare()
+                {
+                    let number=document.getElementById("num").value;
+                    let square=number*number;
+                    document.getElementById("result").innerHTML="Square="+square;
+                }
+            </script>
+            </body>
+            </html>
