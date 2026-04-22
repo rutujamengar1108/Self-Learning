@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Radio Button Example</title>
+</head>
+<body>
+
+<h3>Enter Text</h3>
+
+<input type="text" id="txt"><br><br>
+
+<input type="radio" name="case" onclick="convert()"> Uppercase
+<input type="radio" name="case" onclick="convert()"> Lowercase
+<input type="radio" name="case" onclick="convert()"> As It Is
+
+<p id="result"></p>
+
+<script>
+function convert() {
+    let text = document.getElementById("txt").value;
+    let radios = document.getElementsByName("case");
+    let output = "";
+
+    if(radios[0].checked) {
+        output = text.toUpperCase();
+    }
+    else if(radios[1].checked) {
+        output = text.toLowerCase();
+    }
+    else if(radios[2].checked) {
+        output = text;
+    }
+
+    document.getElementById("result").innerHTML = output;
+}
+</script>
+
+</body>
+</html>

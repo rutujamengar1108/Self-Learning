@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Example</title>
+</head>
+<body>
+
+<h3>Enter Text</h3>
+
+<input type="text" id="txt">
+<button onclick="addData()">Add</button>
+<button onclick="displayData()">Display</button>
+
+<ul id="list"></ul>
+
+<script>
+let arr = [];
+
+function addData() {
+    let value = document.getElementById("txt").value;
+    if(value !== "") {
+        arr.push(value);
+        document.getElementById("txt").value = "";
+    }
+}
+
+function displayData() {
+    let ul = document.getElementById("list");
+    ul.innerHTML = "";
+
+    for(let i = 0; i < arr.length; i++) {
+        ul.innerHTML += "<li>" + arr[i] + "</li>";
+    }
+}
+</script>
+
+</body>
+</html>
