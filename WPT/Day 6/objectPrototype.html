@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+function Student(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+Student.prototype.print = function() {
+    return "Name: " + this.name + " Age: " + this.age;
+};
+
+let s1 = new Student("Rutuja", 23);
+let s2 = new Student("Divyani", 28);
+
+document.getElementById("demo").innerHTML =
+s1.print() + "<br>" + s2.print();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+    <head><title>Creating login in JASON</title>
+<script>
+    function validateForm()
+    {
+        var username=
+        document.getElementById("username").value;
+        var password=
+        document.getElementById("password").value;
+
+        if(username=="")
+    {
+        alert("username cannot be empty");
+        return false;
+    }
+    if(password=="")
+    {
+        alert("password cannot be empty");
+        return false;
+    }
+    if(password.lenght<8||password.lenght>12)
+    {
+        alert("password lenght must be between 8 to 12 charecters");
+        return false;
+    }
+    alert("login succesful");
+    return true;
+ }
+</script>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form onsubmit="return validateForm()">
+
+        username:
+        <input type="text" id=""username><br><br>
+
+        password:
+        <input type="password" id="password"><br><br>
+
+        <input type="submit" value="Login">
+
+        </form>
+        </body>
+    </html>
