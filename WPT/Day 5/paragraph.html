@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Change Paragraph Style</title>
+</head>
+<body>
+
+<p id="p1">This is Paragraph 1</p>
+<p id="p2">This is Paragraph 2</p>
+<p id="p3">This is Paragraph 3</p>
+<p id="p4">This is Paragraph 4</p>
+
+<br>
+
+Select Color:
+<input type="color" id="color">
+
+Enter Paragraph ID (p1/p2/p3/p4):
+<input type="text" id="pid">
+
+<button onclick="changeStyle()">Change Style</button>
+
+<script>
+function changeStyle()
+{
+    var color = document.getElementById("color").value;
+    var pid = document.getElementById("pid").value;
+
+    var para = document.getElementById(pid);
+    para.style.color = color;
+    para.style.fontWeight = "bold";
+}
+</script>
+
+</body>
+</html>
