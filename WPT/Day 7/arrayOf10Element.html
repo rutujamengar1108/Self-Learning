@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="original"></p>
+<p id="even"></p>
+<p id="odd"></p>
+<p id="sorted"></p>
+
+<script>
+
+let arr = [10, 5, 8, 3, 12, 7, 6, 9, 4, 1];
+
+document.getElementById("original").innerHTML = "Original Array: " + arr;
+
+let even = arr.filter(function(num){
+    return num % 2 == 0;
+});
+document.getElementById("even").innerHTML = "Even Numbers: " + even;
+
+let odd = arr.filter(function(num){
+    return num % 2 != 0;
+});
+document.getElementById("odd").innerHTML = "Odd Numbers: " + odd;
+
+let sorted = arr.slice().sort(function(a,b){
+    return a-b;
+});
+document.getElementById("sorted").innerHTML = "Sorted Array: " + sorted;
+
+</script>
+
+</body>
+</html>
