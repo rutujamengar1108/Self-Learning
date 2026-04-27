@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Object</title>
+</head>
+
+<body>
+
+<p id="result"></p>
+
+<script>
+
+// Create object
+let book = {
+    bookId: 101,
+    title: "JavaScript Basics",
+    author: "John",
+    price: 500
+};
+
+// Destructuring the object
+let {bookId, title, author, price} = book;
+
+// Display data
+document.getElementById("result").innerHTML =
+"Book ID: " + bookId + "<br>" +
+"Title: " + title + "<br>" +
+"Author: " + author + "<br>" +
+"Price: " + price;
+
+</script>
+
+</body>
+</html>
