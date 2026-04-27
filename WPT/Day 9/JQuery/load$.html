@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Load Example</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+    $("#btn").click(function(){
+        $("#content").load("load$2.html");
+    });
+
+});
+</script>
+
+</head>
+
+<body>
+
+<h2>Main Page</h2>
+
+<button id="btn">Load Content</button>
+
+<div id="content"></div>
+
+</body>
+</html>
