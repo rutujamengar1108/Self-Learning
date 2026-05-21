@@ -1,0 +1,166 @@
+Reference Table 
+
+mysql> select * from emp;
++-------+--------------+--------+---------------------+------+------------+------+-----------+--------+---------+--------------+------------+------------+----------+-----------+
+| EMPNO | EmployeeName | GENDER | POST                | MGR  | HIREDATE   | SAL  | COMMISION | DEPTNO | BONUSID | USER NAME    | PWD        | PHONE      | isActive | newSalary |
++-------+--------------+--------+---------------------+------+------------+------+-----------+--------+---------+--------------+------------+------------+----------+-----------+
+|  6001 | GITA         | F      | Compliance officers | 7920 | 1981-07-19 | 1750 |      NULL |     30 |       1 | GITA         | sales@2017 | NULL       |        1 |      2750 |
+|  6129 | VRUSHALI     | F      | Compliance officers | 7920 | 1981-07-19 | 1750 |      NULL |     50 |       1 | VRUSHALI     | PUN@8877   | NULL       |        1 |      2750 |
+|  6473 | SHARMIN      | F      | Public Relation     | 7920 | 1981-07-19 | 1750 |      NULL |     20 |       1 | SHARMIN      | a12recmpm  | NULL       |        1 |      2750 |
+|  6781 | BANDISH      | F      | Public Relation     | 7920 | 1981-07-19 | 1750 |      NULL |     20 |       1 | BANDISH      | a12recmpm  | NULL       |        1 |      2750 |
+|  7369 | SMITH        | M      | CLERK               | 7902 | 1980-12-17 |  800 |      NULL |     20 |       2 | TRITONE      | a12recmpm  | 7032300023 |        0 |      1800 |
+|  7415 | AARAV        | M      | CLERK               | 7902 | 1981-12-31 | 3350 |      NULL |     10 |    NULL | AARAV        | NULL       | 7032300084 |        0 |      4350 |
+|  7421 | THOMAS       | M      | CLERK               | 7920 | 1981-07-19 | 1750 |      NULL |     10 |       1 | THOMAS       | r50mpm     | 7032300011 |        0 |      2750 |
+|  7499 | ALLEN        | M      | SALESMAN            | 7698 | 1981-02-20 | 1600 |       300 |     30 |       4 | ALWAYS TESTE | sales@2017 | 7032300096 |        1 |      2600 |
+|  7521 | WARD         | M      | SALESMAN            | 7698 | 1981-02-22 | 1250 |       500 |     30 |       1 | WARD         | sales@2017 | 7132300034 |        1 |      2250 |
+|  7566 | JONES        | M      | MANAGER             | 7839 | 1981-04-02 | 2975 |      NULL |     20 |       4 | HONEYCOMB    | a12recmpm  | 7132300039 |        1 |      3975 |
+|  7654 | MARTIN       | M      | SALESMAN            | 7698 | 1981-09-28 | 1250 |      1400 |     30 |       6 | LIFE RACER   | sales@2017 | 7132300050 |        1 |      2250 |
+|  7698 | BLAKE        | M      | MANAGER             | 7839 | 1981-05-01 | 2850 |      NULL |     30 |       1 | BIG BEN      | sales@2017 | 7132300027 |        1 |      3850 |
+|  7782 | CLARK        | M      | MANAGER             | 7839 | 1981-06-09 | 2450 |      NULL |     10 |       3 | CLARK        | r50mpm     | 7032300001 |        1 |      3450 |
+|  7788 | SCOTT        | M      | ANALYST             | 7566 | 1982-12-09 | 3000 |      NULL |     20 |       3 | WHITE SAND   | a12recmpm  | NULL       |        1 |      4000 |
+|  7839 | KING         | M      | PRESIDENT           | NULL | 1981-11-17 | 5000 |      NULL |     10 |       1 | KING         | r50mpm     | 7132300081 |        1 |      6000 |
+|  7840 | FRED         | M      | vice PRESIDENT      | 7839 | 1983-08-09 | 5000 |      NULL |     20 |       1 | SAND STONE   | a12recmpm  | NULL       |        1 |      6000 |
+|  7844 | TURNER       | M      | SALESMAN            | 7698 | 1981-09-08 | 1500 |         0 |     30 |       5 | SAND DUST    | sales@2017 | NULL       |        1 |      2500 |
+|  7876 | ADAMS        | M      | CLERK               | 7788 | 1983-01-12 | 1100 |      NULL |     20 |       1 | CRAZY ANYONE | a12recmpm  | 7132300086 |        1 |      2100 |
+|  7888 | Ruhan        | M      | Network             | 7888 | 1983-08-09 | 2000 |      NULL |     60 |       1 | Ruhan        | BRD@1122   | NULL       |        1 |      3000 |
+|  7889 | Neel         | M      | vice PRESIDENT      | 7839 | 1983-08-09 | 1000 |      NULL |     60 |       0 | Neel         | BRD@1122   | NULL       |        1 |      2000 |
+|  7900 | JAMES        | M      | CLERK               | 7698 | 1981-12-03 |  950 |      NULL |     30 |       2 | CRAZY LEADER | sales@2017 | 7132300042 |        1 |      1950 |
+|  7902 | FORD         | M      | ANALYST             | 7566 | 1981-12-03 | 3000 |      NULL |     20 |       4 | CONBRIO      | a12recmpm  | NULL       |        0 |      4000 |
+|  7919 | HOFFMAN      | M      | MANAGER             | 7566 | 1982-03-24 | 4150 |      NULL |     30 |       3 | INTERVAL     | sales@2017 | NULL       |        1 |      5150 |
+|  7920 | GRASS        | M      | SALESMAN            | 7919 | 1980-02-14 | 2575 |      2700 |     30 |       5 | GRASS        | sales@2017 | NULL       |        1 |      3575 |
+|  7934 | MILLER       | M      | CLERK               | 7782 | 1982-01-23 | 1300 |      1300 |     10 |       2 | QUARTERNOTE  | r50mpm     | 7132300055 |        0 |      2300 |
+|  7945 | AARUSH       | M      | SALESMAN            | 7902 | 1980-02-14 | 1350 |      2700 |     30 |    NULL | AARUSH       | ABCDEF     | NULL       |        0 |      2350 |
+|  7949 | ALEX         | M      | MANAGER             | 7698 | 1982-01-24 | 1250 |       500 |     30 |       5 | QUARTERREST  | sales@2017 | 7156567183 |        1 |      2250 |
+|  8433 | NATASHA      | F      | CLERK               | 7920 | 1981-07-19 | 1750 |      NULL |     30 |       1 | NATASHA      | sales@2017 | NULL       |        1 |      2750 |
+|  9400 | SANGITA      | F      | Compliance officers | 7920 | 1981-07-19 | 1750 |      NULL |     50 |       1 | SANGITA      | NULL       | NULL       |        1 |      2750 |
+|  9473 | SUPRIYA      | F      | ANALYST             | 7920 | 1981-07-19 | 1750 |      NULL |     50 |       1 | SUPRIYA      | XYZ@1234   | NULL       |        1 |      2750 |
++-------+--------------+--------+---------------------+------+------------+------+-----------+--------+---------+--------------+------------+------------+----------+-----------+
+30 rows in set (0.09 sec)
+
+
+Q1. List names of employees whose job is MANAGER.
+
+mysql> select employeename from emp where POST='manager';
++--------------+
+| employeename |
++--------------+
+| JONES        |
+| BLAKE        |
+| CLARK        |
+| HOFFMAN      |
+| ALEX         |
++--------------+
+5 rows in set (0.17 sec)
+
+Q2. List names of employee having salary greater than equal to 3000.
+
+mysql> select employeename from emp where sal>=3000;
++--------------+
+| employeename |
++--------------+
+| AARAV        |
+| SCOTT        |
+| KING         |
+| FRED         |
+| FORD         |
+| HOFFMAN      |
++--------------+
+6 rows in set (0.11 sec)
+
+Q3. List all employees having ‘A’ as second letter in their names.
+
+mysql> select * from emp where employeename like '_a%';
++-------+--------------+--------+---------------------+------+------------+------+-----------+--------+---------+--------------+------------+------------+----------+-----------+
+| EMPNO | EmployeeName | GENDER | POST                | MGR  | HIREDATE   | SAL  | COMMISION | DEPTNO | BONUSID | USER NAME    | PWD        | PHONE      | isActive | newSalary |
++-------+--------------+--------+---------------------+------+------------+------+-----------+--------+---------+--------------+------------+------------+----------+-----------+
+|  6781 | BANDISH      | F      | Public Relation     | 7920 | 1981-07-19 | 1750 |      NULL |     20 |       1 | BANDISH      | a12recmpm  | NULL       |        1 |      2750 |
+|  7415 | AARAV        | M      | CLERK               | 7902 | 1981-12-31 | 3350 |      NULL |     10 |    NULL | AARAV        | NULL       | 7032300084 |        0 |      4350 |
+|  7521 | WARD         | M      | SALESMAN            | 7698 | 1981-02-22 | 1250 |       500 |     30 |       1 | WARD         | sales@2017 | 7132300034 |        1 |      2250 |
+|  7654 | MARTIN       | M      | SALESMAN            | 7698 | 1981-09-28 | 1250 |      1400 |     30 |       6 | LIFE RACER   | sales@2017 | 7132300050 |        1 |      2250 |
+|  7900 | JAMES        | M      | CLERK               | 7698 | 1981-12-03 |  950 |      NULL |     30 |       2 | CRAZY LEADER | sales@2017 | 7132300042 |        1 |      1950 |
+|  7945 | AARUSH       | M      | SALESMAN            | 7902 | 1980-02-14 | 1350 |      2700 |     30 |    NULL | AARUSH       | ABCDEF     | NULL       |        0 |      2350 |
+|  8433 | NATASHA      | F      | CLERK               | 7920 | 1981-07-19 | 1750 |      NULL |     30 |       1 | NATASHA      | sales@2017 | NULL       |        1 |      2750 |
+|  9400 | SANGITA      | F      | Compliance officers | 7920 | 1981-07-19 | 1750 |      NULL |     50 |       1 | SANGITA      | NULL       | NULL       |        1 |      2750 |
++-------+--------------+--------+---------------------+------+------------+------+-----------+--------+---------+--------------+------------+------------+----------+-----------+
+8 rows in set (0.03 sec)
+
+Q4. List the Employee Number, Name, Hiredate and Job Title of the Employees in the Department 10.
+
+mysql> select empno, employeename, hiredate, POST from emp where deptno=10;
++-------+--------------+------------+-----------+
+| empno | employeename | hiredate   | POST      |
++-------+--------------+------------+-----------+
+|  7415 | AARAV        | 1981-12-31 | CLERK     |
+|  7421 | THOMAS       | 1981-07-19 | CLERK     |
+|  7782 | CLARK        | 1981-06-09 | MANAGER   |
+|  7839 | KING         | 1981-11-17 | PRESIDENT |
+|  7934 | MILLER       | 1982-01-23 | CLERK     |
++-------+--------------+------------+-----------+
+5 rows in set (0.01 sec)
+
+Q5. Display the details of those Employees who earn a monthly Salary of more than 2000.
+
+mysql> select * from emp where sal>2000;
++-------+--------------+--------+----------------+------+------------+------+-----------+--------+---------+------------+------------+------------+----------+-----------+
+| EMPNO | EmployeeName | GENDER | POST           | MGR  | HIREDATE   | SAL  | COMMISION | DEPTNO | BONUSID | USER NAME  | PWD        | PHONE      | isActive | newSalary |
++-------+--------------+--------+----------------+------+------------+------+-----------+--------+---------+------------+------------+------------+----------+-----------+
+|  7415 | AARAV        | M      | CLERK          | 7902 | 1981-12-31 | 3350 |      NULL |     10 |    NULL | AARAV      | NULL       | 7032300084 |        0 |      4350 |
+|  7566 | JONES        | M      | MANAGER        | 7839 | 1981-04-02 | 2975 |      NULL |     20 |       4 | HONEYCOMB  | a12recmpm  | 7132300039 |        1 |      3975 |
+|  7698 | BLAKE        | M      | MANAGER        | 7839 | 1981-05-01 | 2850 |      NULL |     30 |       1 | BIG BEN    | sales@2017 | 7132300027 |        1 |      3850 |
+|  7782 | CLARK        | M      | MANAGER        | 7839 | 1981-06-09 | 2450 |      NULL |     10 |       3 | CLARK      | r50mpm     | 7032300001 |        1 |      3450 |
+|  7788 | SCOTT        | M      | ANALYST        | 7566 | 1982-12-09 | 3000 |      NULL |     20 |       3 | WHITE SAND | a12recmpm  | NULL       |        1 |      4000 |
+|  7839 | KING         | M      | PRESIDENT      | NULL | 1981-11-17 | 5000 |      NULL |     10 |       1 | KING       | r50mpm     | 7132300081 |        1 |      6000 |
+|  7840 | FRED         | M      | vice PRESIDENT | 7839 | 1983-08-09 | 5000 |      NULL |     20 |       1 | SAND STONE | a12recmpm  | NULL       |        1 |      6000 |
+|  7902 | FORD         | M      | ANALYST        | 7566 | 1981-12-03 | 3000 |      NULL |     20 |       4 | CONBRIO    | a12recmpm  | NULL       |        0 |      4000 |
+|  7919 | HOFFMAN      | M      | MANAGER        | 7566 | 1982-03-24 | 4150 |      NULL |     30 |       3 | INTERVAL   | sales@2017 | NULL       |        1 |      5150 |
+|  7920 | GRASS        | M      | SALESMAN       | 7919 | 1980-02-14 | 2575 |      2700 |     30 |       5 | GRASS      | sales@2017 | NULL       |        1 |      3575 |
++-------+--------------+--------+----------------+------+------------+------+-----------+--------+---------+------------+------------+------------+----------+-----------+
+10 rows in set (0.00 sec)
+
+Q6. Display the names of all Employees from Department 10 and 20 whose name start with “A” and ends with “B”.
+
+mysql> select employeename from emp where deptno in (10,20) and employeename like 'a%b';
+Empty set (0.21 sec)
+
+Instead i modify like this
+
+Display the names of all Employees from Department 10 and 20 whose name start with “A” and ends with “B”.
+
+mysql> select employeename from emp where deptno in (10,20) and employeename like 'f%d';
++--------------+
+| employeename |
++--------------+
+| FRED         |
+| FORD         |
++--------------+
+2 rows in set (0.00 sec)
+
+Q6. Display the details of the employees who have joined on 21-DEC-1990.
+
+mysql> select * from emp where hiredate='1990-12-21';
+Empty set (0.06 sec)
+
+Instead i modify like this
+
+mysql> select * from emp where hiredate='1980-2-14';
++-------+--------------+--------+----------+------+------------+------+-----------+--------+---------+-----------+------------+-------+----------+-----------+
+| EMPNO | EmployeeName | GENDER | POST     | MGR  | HIREDATE   | SAL  | COMMISION | DEPTNO | BONUSID | USER NAME | PWD        | PHONE | isActive | newSalary |
++-------+--------------+--------+----------+------+------------+------+-----------+--------+---------+-----------+------------+-------+----------+-----------+
+|  7920 | GRASS        | M      | SALESMAN | 7919 | 1980-02-14 | 2575 |      2700 |     30 |       5 | GRASS     | sales@2017 | NULL  |        1 |      3575 |
+|  7945 | AARUSH       | M      | SALESMAN | 7902 | 1980-02-14 | 1350 |      2700 |     30 |    NULL | AARUSH    | ABCDEF     | NULL  |        0 |      2350 |
++-------+--------------+--------+----------+------+------------+------+-----------+--------+---------+-----------+------------+-------+----------+-----------+
+2 rows in set (0.00 sec)
+
+Q8. Display the Employee Code, Name, Job & Annual Salary for all Employees belonging to Department Number 10.
+
+mysql> select empno, employeename, Post, sal*12 as annual_salary from emp where deptno=10;
++-------+--------------+-----------+---------------+
+| empno | employeename | Post      | annual_salary |
++-------+--------------+-----------+---------------+
+|  7415 | AARAV        | CLERK     |         40200 |
+|  7421 | THOMAS       | CLERK     |         21000 |
+|  7782 | CLARK        | MANAGER   |         29400 |
+|  7839 | KING         | PRESIDENT |         60000 |
+|  7934 | MILLER       | CLERK     |         15600 |
++-------+--------------+-----------+---------------+
+5 rows in set (0.11 sec)
